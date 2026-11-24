@@ -127,6 +127,11 @@ class Translator extends Translation\Translator
      */
     public function setLocale($locale)
     {
+        // the locale becomes part of a file name: refuse anything that is not a locale (path separators, dots that climb, NUL)
+        if (!is_string($locale) || 1 !== preg_match('/^[a-z0-9@_\\-]*$/i', $locale)) {
+            return false;
+        }
+
         $locale = preg_replace_callback('/[-_]([a-z]{2,})/', function ($matches) {
             // _2-letters is a region, _3+-letters is a variant
             return '_'.call_user_func(strlen($matches[1]) > 2 ? 'ucfirst' : 'strtoupper', $matches[1]);
