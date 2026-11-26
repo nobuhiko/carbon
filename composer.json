@@ -1,5 +1,5 @@
 {
-    "name": "nobuhiko/carbon",
+    "name": "umiushi-lab/carbon",
     "type": "library",
     "description": "Carbon 1.36.2 with security fixes backported, for EC-CUBE 3.0.x shops that cannot move off the versions EC-CUBE 3.0.18 ships",
     "keywords": [
@@ -34,6 +34,6 @@
         "nesbot/carbon": "1.36.2"
     },
     "support": {
-        "issues": "https://github.com/nobuhiko/carbon/issues"
+        "issues": "https://github.com/umiushi-lab/carbon/issues"
     }
 }

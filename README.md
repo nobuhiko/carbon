@@ -13,7 +13,7 @@ EC-CUBE 3.0.18 requires `nesbot/carbon` `~1.20`. Carbon 1.x no longer receives f
 Requires Composer 2. In the shop's project root:
 
 ```
-composer require nobuhiko/carbon:^1.36.2
+composer require umiushi-lab/carbon:^1.36.2
 ```
 
 The package `replace`s `nesbot/carbon` 1.36.2, so Composer removes the original and every other package keeps working against the same version.
