@@ -1,5 +1,7 @@
 # Carbon 1.36.2 with a security fix, for EC-CUBE 3.0.x
 
+[![tests](https://github.com/umiushi-lab/carbon/actions/workflows/tests.yml/badge.svg?branch=eccube3%2F1.36)](https://github.com/umiushi-lab/carbon/actions/workflows/tests.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/umiushi-lab/carbon/badge)](https://scorecard.dev/viewer/?uri=github.com/umiushi-lab/carbon)
+
 EC-CUBE 3.0.18 requires `nesbot/carbon` `~1.20`. Carbon 1.x no longer receives fixes. This fork keeps 1.36.2 and backports the published security fix.
 
 ## Fixed
